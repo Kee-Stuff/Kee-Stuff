@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title> Kee Stuff </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Kee Stuff </title>
+	<link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
 <style>
-
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  background: transparent; }
-
 	body {
-		/*Set the body width*/
-		width:100%;
-		max-width: 960px;
-		margin: 0 auto;
-		/*add background image */
 		background-image: url(background.JPG);
 		background-size: cover;
-		<!--background-position: center;-->
 	}
 
-	nav {
-		width: 100%;
-		margin: 20px, 0;
-  	}
-
-  	nav ul {
-  		width: 100%;
-  		list-style: none;
-  		overflow:hidden;
-  		margin: none;
-  		padding: none;
-  	}
-
-	nav ul li {
-		width: 33%;
-		float:left;
+	ul.nav {
+  	width:100%;
+  	margin:0 auto;
+  	padding:0;
+  	list-style:none;
+ 
+    text-align:center;
+  	font-family: sans-serif; 
 	}
 
-	nav ul li a {
-		text-align: center;
-		padding: 30px 0px;
-		display:block;
-		width:100%;
+	.nav li { 
+    display:inline-block;
+    width:33%;
+    margin:0;
+   	padding:0;
 	}
+
+	.nav a {
+   	text-align:center;
+   	padding:12px 0 13px 0;
+   	margin:0;
+   	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+  	display:block;
+  	}​
+
 
 </style>
 </head>
+ 
+ <body>
+<!--<body background="background.JPG">-->
 
-<body>
-<nav>
-	<ul>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+ 
+	<ul class="nav navbar-nav">
+
 		<li>
 			<a href="#">Kee Reads</a>
 		</li>
@@ -65,6 +58,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
 			<a href="#">Kee Bakes</a>
 		</li>
 	</ul>
+	</div>
 </nav>
 
 </body>
